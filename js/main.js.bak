@@ -1,0 +1,111 @@
+ $(function() {
+          $('.bxslider').bxSlider({
+            captions:true,
+            //slideWidth:600,  //수정
+            auto:true,
+            autoControls:true,
+            stopAutoOnclick:true,
+
+          });
+           $('.bxslider2').bxSlider({
+            captions:true,
+            //slideWidth:600,  //수정
+            auto:true,
+            autoControls:true,
+            stopAutoOnclick:true,
+
+          });
+     //탭
+       $('.tabSet').each(function(){
+        var anchors = $(this).find('.tabs a');
+        var panelDivs = $(this).find('.panel');
+        var lastAnchor;
+        var lastPanel;
+        
+        anchors.show();//
+        lastAnchor = anchors.filter('.on');
+        lastPanel = $(lastAnchor.attr('move_href'));
+        
+        panelDivs.hide();
+        lastPanel.show();
+        
+        anchors.click(function(){
+          var currentAnchor = $(this);
+          var currentPanel = $(currentAnchor.attr('move_href'));
+            
+           currentAnchor.addClass('on');
+           lastAnchor.removeClass('on');
+            
+           lastAnchor =  currentAnchor;
+            
+           currentPanel.show();
+           lastPanel.hide(); 
+            
+           lastPanel = currentPanel;
+        });
+           });
+     //네비
+        $('.mainMenu > li').each(function(){
+           var sub = $(this).find('.subMenu');
+           
+           $(this).hover(function(){
+               sub.stop().slideDown();
+           },function(){
+               //없어짐
+               sub.stop().slideUp();
+           })  //hover
+       }) //nav li each
+        
+      $(window).scroll(function(){
+          if ($(document).scrollTop() >= 300) {
+             $('header').css({background:'rgba(0,0,0,0.5)'});
+              
+          }else {
+               $('header').css({background:'rgba(0,0,0,0)'});
+          }
+      });
+   
+     
+           $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+		responsive: [                   
+                       {  breakpoint: 1200,    
+                              settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 3
+                              }
+                         }, {  breakpoint: 1024,
+                              settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1
+                              }
+                         },{ breakpoint: 800,
+                              settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                              }  
+                            }
+                 ]  //반응형 포인트 지정
+      });
+
+
+
+ $('.open1').click(function(){
+         $('.LeftWrap').animate({right:0},1000,'easeInExpo');
+      })
+      $('.close1').click(function(){
+        $('.LeftWrap').animate({right:'-300px'},500,'easeOutExpo');  
+      })
+      
+     $('#btn1 > li').each(function(){
+         var sub = $(this).find('.sub');
+         $(this).click(function(){
+             $('.sub').slideUp();
+             $(sub).stop().slideToggle();
+         })
+     })
+             
+ });//전체끝

@@ -1,0 +1,189 @@
+body{min-width: 1180px}
+
+#wrap{}
+#header{}
+#section{}
+#footer{}
+
+
+
+
+/*********************header****************************/
+
+
+
+
+#nav .mainMenu{float: right;position: absolute; top:67px; left: 550px}
+#nav .mainMenu > li{width:140px; text-align:center;padding-top: 18px; float: right}
+#nav .mainMenu > li > a{font-size:16px; display:block; padding:10px 0;font-weight:bold; transition:all 0.5s;}
+#nav .mainMenu > li:hover > a{background-color:#4298cc; color:#fff;}
+#nav .subMenu{background-color:rgba(255,255,255,0.8); display:none;}
+#nav .subMenu a{display:block; padding:5px 0;transition:all 0.5s;font-size: 14px}
+#nav .subMenu li a{}
+#nav .subMenu li:hover a{background-color:#4298cc; color:#fff;}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#header{padding-top:20px;padding-bottom:20px}
+#header .logo{float:left; padding-top:56px; padding-bottom: 20px}
+#header #nav{float:left}
+#header .top{text-align: right;font-size:0.6rem;line-height:0.8em ;padding-top:20px;padding-right:20px;margin-bottom:20px}
+#header .top a{display:inline-block;border-right:1px solid #777;padding:0 10px;}
+#header .top a:hover{text-decoration: underline}
+#header .top a:nth-child(5) {border-right:none}
+#header .top a.home{color:#9D834A}
+#header .top a.menu{background:url(../index_img/m_arr_menu_down.jpg) no-repeat right;padding-right:20px;padding-top:5px;padding-bottom:5px;display:none;}
+#header .main_nav{float: left; width: 980px; padding-top: 28px; padding-left: 55px}
+#header .main_nav li{width:13%;font-weight:bold;font-size:0.85rem;float: left; text-align: center; height: 48px; margin-left: 10px}
+#header .main_nav li a:hover{text-decoration: underline}
+ 
+
+
+
+/*********************section****************************/
+*{margin:0;	padding:0;}
+
+#section2:after{content: "";display: block; clear: both}
+
+.all{
+	width:100%;
+	margin:auto;
+}
+.tabSet{
+	margin-bottom:30px;
+}
+.tabs{
+	padding:20px 20px 0;
+    width: 16%;
+    float: left
+	
+}
+	.tabs li{
+		padding:20px 2px 0 0;
+		list-style-type:none;
+        
+	}
+		.tabs li a{
+
+			color:#000;
+			background:#fff;
+			padding:.5em 1.75em;
+			display:none;
+			border-radius:3px 3px 3px 3px;
+			font-weight:bold;
+			font-size:14px;
+			text-decoration:none;
+		}
+		ul li a:hover{
+			text-decoration:underline;
+		}
+		ul li a.on{width: 197px;height: 51px;
+			background:#64c7ed;
+			cursor:default;
+			color:#fff;
+		}
+		ul li a.on:hover{
+			text-decoration:none;
+           
+		}
+.panels{
+	background:#fff;
+	min-height:180px;
+float: left;
+    width: calc(80% - 40px);
+    
+}
+.panel{
+	padding:30px 0px;
+	font-size:14px;
+	color:#4d4d4d;
+}
+.panel h2{font-size: 2.5rem; padding-bottom: 1.5rem}
+.panel h3{font-size: 1.3rem;padding-bottom: 1rem}
+.panel h3 span{color: #64c7ed;}
+.panel h6{font-size: 1rem;padding-bottom: 1rem}
+.panel .list{font-size: 0.8rem; line-height: 1.5rem; padding-bottom: 40px}
+.panel .list span{font-weight: bold}
+.panel .test_set li{width: 273px; height: 338px; background-color: #fff;float: left; box-shadow:0px 0px 20px #bcbcbc; text-align: center; margin-right: 20px; margin-top: 46px;margin-bottom: 46px}
+.panel .test_set li:nth-child(3){margin-left: 0px}
+.panel .test_set li img{padding-top: 26px; padding-bottom: 16px}
+.panel .icon_name{font-size: 1rem; font-weight: bold; padding-bottom: 16px}
+.panel .test_set .line{width: 77px; height: 4px; background-color: #4c4c4d; margin: 0 auto}
+.panel .test_set .box-txt{font-size: 0.9rem; line-height: 1.5rem; text-align: left; padding-left: 40px; padding-bottom: 16px}
+
+.panel .test_set .list2{font-size: 0.8rem; line-height: 1.5rem}
+.panel .test_set .list2 span{font-weight: bold}
+
+.panel .test_set .howtoav{width: 106px; height: 51px; background-color: #edebeb; border: none}
+.panel .test_set .test_start{width: 106px; height: 51px; background-color: #fd6191; border: none}
+
+
+#panel1-2 .process li{float: left; padding-top: 46px; padding-bottom: 67px; width: 22%; text-align: center; padding-left: 25px}
+#panel1-2 .process li img{padding-bottom: 20px}
+#panel1-2 .process li h5{font-size: 0.9rem; font-weight: bold; padding-bottom: 15px}
+#panel1-2 .process li p{font-size: 0.9rem;line-height: 1.5em}
+#panel1-2 .submit{padding-top: 60px; padding-bottom: 40px}
+
+#panel1-2 .go{width: 200px; height: 50px; margin: 0 auto; text-align: center; margin-left:42%; background-color: #b2c1cf; color: #fff; font-size: 1rem; font-weight: bold; margin-bottom: 100px}
+
+
+
+
+
+
+/*********************footer****************************/
+#footer .footer_left{float: left; width: 75%}
+#footer .footer_left .copy_top li{float: left; font-size: 0.9rem; text-align: center; border-right: 1px solid #000; padding: 0 20px;line-height: 1.2rem; margin-bottom: 30px}
+#footer .footer_left .copy_top li:nth-child(6){border-right: none; }
+#footer .footer_left .copy_top li:nth-child(1){padding-left: 0}
+#footer .footer_left .copy_top .txt_color{color: #15a2a4; font-weight: bold}
+#footer .footer_left .adress{font-size: 0.9rem; line-height: 1.5rem}
+#footer .footer_left .copy{font-size: 0.9rem; padding-bottom: 65px; padding-top: 35px}
+
+#footer .footer_right{float: right; width: 25%; text-align: right}
+#footer .footer_right .f_logo{padding-top: 30px}
+#footer .footer_right .sns{width: 100%}
+#footer .footer_right .sns li{float: left; padding:16px 10px; width: 20%}
+
+/****************section6**************/
+#section6{height: 123px; background-color: #f7f7f7; padding-top: 25px; margin-bottom: 50px}
+#section6 h3{font-size: 20px}
+
+#section6 .sec6_left{width: 30%;float: left;margin:0 1.5%; border-right: 1px solid #d6dce3}
+#section6 .sec6_left h5{font-size: 15px; color: #336787}
+#section6 .sec6_left h3{line-height: 2em}
+#section6 .sec6_left p{font-size: 12px;line-height: 1.5em}
+#section6 .sec6_left .bold{font-weight: bold}
+
+#section6 .sec6_middle{width: 30%;float: left;margin:0 1.5%;border-right: 1px solid #d6dce3}
+#section6 .sec6_middle h5{font-size: 15px; color: #336787}
+#section6 .sec6_middle h3{line-height: 2em}
+#section6 .sec6_middle p{font-size: 12px; line-height: 1.5em}
+
+#section6 .sec6_right{width:30%; float: left;margin:0 1.5%}
+#section6 .sec6_right h3{padding-bottom: 19px}
+#section6 .sec6_right h3 a{border: 1px solid #a5a4a4; font-size: 10px; padding: 10px 15px; float: right; text-align: center; line-height: 4px; margin-right: 70px}
+#section6 .moniter{float: left; padding-right: 28px}
+#section6 .right_txt{font-size: 12px;line-height: 1.5em; float: left}
+
+
+
+.sec4_tit{font-size: 1.5rem; padding-right: 30px! important; padding-top: 20px !important}
+
+.pan-con img{width: 100%}
+/******************sub2******************/
+
